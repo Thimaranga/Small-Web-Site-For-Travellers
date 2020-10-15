@@ -1,0 +1,879 @@
+/*common for all pages*/
+body {
+    margin: 0;
+}
+
+section {
+    display: block;
+}
+h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+/* ===================================================================
+ * # basic/base setup styles
+ *
+ * ------------------------------------------------------------------- */
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-weight: normal;
+    line-height: 1;
+
+    
+}
+p{
+   word-wrap: break-word;
+}
+ol,
+ul {
+    list-style: none;
+}
+
+li {
+    display: block;
+}
+a {
+    text-decoration: none;
+    line-height: inherit;
+}
+a img {
+    border: none;
+}
+img,video {
+    max-width: 100%;
+    height: auto;
+}
+#main-logo{
+  float:right;
+  margin-top: 35%;
+  margin-right: 8%;
+}
+#main-logo-for-subpages{
+  margin-left: 5%;
+}
+#footer-main{
+  width:100%;
+  height: 300px;
+  background-color: rgb(0,0,0,0.6);
+  color: #000000;
+
+}
+#footer-table{
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+}
+#first_tr{
+  width: 100%;
+  font-size: 28px;
+  border-bottom: 1px solid black;
+
+}
+#details_cell{
+  text-align: center;
+}
+#aq1,#aq{
+  background-color: white;
+  color: red;
+
+}
+.active{
+  border-bottom: 1px solid #ffffff;
+  color:#000000;
+  opacity: 0.6;
+}
+/*home page*/
+.s-home {
+  width: 100%;
+  height: 100%;
+  min-height: 786px;
+  background-color: transparent;
+  background-image: url(hero-bg.jpg);
+  position: relative;
+  display: table;
+  background-size: cover;
+}
+.s-home .shadow-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background: linear-gradient(to top, black 20%, transparent 1000%);
+}
+
+/* ## home content*/
+.home-content {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  padding-bottom: 15.6rem;
+  overflow: hidden;
+  position: relative;
+}
+.home-content h1 {
+  font-family: "metropolis-bold", sans-serif;
+  font-size: 9rem;
+  line-height: 1.1;
+  margin-top: 0;
+  color: #d6cdcd;
+  outline-color: #0f0f0f
+}
+.home-content h1 + p {
+  font-family: "metropolis-light", sans-serif;
+  font-size: 3.8rem;
+  line-height: 1.421;
+  color: rgba(255, 255, 255, 0.8);
+  margin-top: 2.4rem;
+  padding-left: 10rem;
+  position: relative;
+}
+
+.home-content__main {
+  height: 100%;
+  padding-right: 20rem;
+  position: relative;
+
+}
+#animate1{
+    background: transparent;
+    position: relative;
+    animation: forh1 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes forh1 {
+    from {top: -40%;}
+    to {top: 30%;}
+}
+#animate2{
+    background: transparent;
+    position: relative;
+    animation: forp 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes forp {
+    from {top: 60%;}
+    to {top: 30%;}
+}
+
+
+/* ## home sidelinks*/
+.home-sidelinks {
+  list-style: none;
+  font-family: "metropolis-regular", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.714;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 0;
+  position: top-right;
+  padding-top: 100px;
+  padding-right: 50px;
+
+}
+.home-sidelinks li {
+  display: block;
+  font-weight: bold;
+  padding: 0;
+  text-align: left;
+  background-color: transparent;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.8s ease-in-out;
+  position: relative;
+}
+
+.home-sidelinks a {
+  display: block;
+  padding: 2.1rem 15rem 2.1rem 4rem;
+  color: #ffffff;
+}
+.home-sidelinks span {
+  display: block;
+  font-family: "metropolis-regular", sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.home-sidelinks li:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+/* ## home scroll */
+
+.home-scroll {
+  height: 4.8rem;
+  position: absolute;
+  right: 110px;
+  bottom: 6.6rem;
+}
+.home-scroll__text {
+  display: inline-block;
+  font-family: "metropolis-semibold", sans-serif;
+  font-size: 11px;
+  line-height: 4.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  color: #ffffff;
+  border-bottom: 1px solid transparent;
+
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  right: 7.5rem;
+}
+.home-scroll__icon {
+  display: block;
+  height: 4.8rem;
+  width: 4.8rem;
+  background-color: #ffffff;
+  background-image: url(../images/icons/icon-arrow-down.svg);
+  background-position: center center;
+  rotate:right;
+  background-repeat: no-repeat;
+  background-size: 10px 15px;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.home-scroll:hover .home-scroll__text {
+  border-bottom: 1px solid #ffffff;
+  color:#000000;
+}
+
+
+
+/* ## home scroll */
+.home-social {
+  list-style: none;
+  font-size: 14px;
+  line-height: 4.8rem;
+  margin: 0;
+  color: #ffffff;
+  position: absolute;
+  bottom: 6.6rem;
+  left: 110px;
+}
+.home-social a {
+  color: #ffffff;
+  border-bottom: 1px solid transparent;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.home-social a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+.home-social i {
+  display: none;
+}
+.home-social .home-social-title {
+  font-family: "metropolis-semibold", sans-serif;
+  padding-right: 4rem;
+  margin-right: 0.8rem;
+  position: relative;
+}
+.home-social .home-social-title::after {
+  display: block;
+  content: "";
+  width: 2.4rem;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+.home-social li {
+  display: inline-block;
+  position: relative;
+  margin-right: 0.6rem;
+}
+.home-social li a {
+  display: block;
+}
+
+/********************** places ***************************/
+/**********************menu bar****************************/
+#places-content{
+  width: 100%;
+  height:100%;
+  min-height:720px;
+  background-color: transparent;
+}
+#places-content-menu{
+  width: 100%;
+  height:40%;
+  min-height:758px;
+  background-image:url(../images/asd.jpg);
+  position: relative;
+  background-size: cover;
+}
+#content-list{
+  float:right;
+  padding-right: 4rem;
+}
+.main-menu{
+  text-align: right;
+  list-style: none;
+  font-family: "metropolis-regular", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.714;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 0;
+  position: top-right;
+  padding-top: 100px;
+  
+
+}
+.main-menu li{
+  display: block;
+  position: relative;
+  margin-right:0;
+  float:left;
+}
+
+.main-menu a {
+  display: block;
+  padding: 2.1rem 2rem 2.1rem 2rem;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.main-menu span {
+  display: block;
+  font-family: "metropolis-regular", sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.main-menu li:hover {
+  
+  border-bottom: 1px solid #ffffff;
+  color:#000000;
+  opacity: 0.4;
+}
+/*section 1*/
+#places-content .shadow-overlay2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background: linear-gradient(to top, black 20%, transparent 1000%);
+}
+/*section 2*/
+#places-content{
+  width: 100%;
+  height:100%;
+  min-height:720px;
+  background-color: transparent;
+}
+.places-detail{
+  background-color: #f2efef;
+}
+.p-in-places{
+  font-size: 20px;
+  text-align: center;
+}
+.h1-in-places{
+  text-align: center;
+  font-size: 30px;
+  font-family: "Algerian";
+}
+/********************** Services ***************************/
+#dropbtn {
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    border: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    color: #ffffff;
+    min-width: 160px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: black;
+  color:#C318D7;
+}
+/**********************menu bar****************************/
+#services-content{
+  width: 100%;
+  height:100%;
+  min-height:720px;
+  background-color: transparent;
+}
+#services-content-menu{
+  width: 100%;
+  height:40%;
+  min-height:742px;
+  background-image:url(../images/new2.jpg);
+  position: relative;
+  background-size: cover;
+}
+#content-list{
+  float:right;
+  padding-right: 4rem;
+}
+.main-menu{
+  text-align: right;
+  list-style: none;
+  font-family: "metropolis-regular", sans-serif;
+  font-size: 1.4rem;
+  line-height: 1.714;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  margin: 0;
+  position: top-right;
+  padding-top: 100px;
+  
+
+}
+.main-menu li{
+  display: block;
+  position: relative;
+  margin-right:0;
+  float:left;
+}
+
+.main-menu a {
+  display: block;
+  padding: 2.1rem 2rem 2.1rem 2rem;
+  color: #ffffff;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.main-menu span {
+  display: block;
+  font-family: "metropolis-regular", sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.main-menu li:hover {
+  
+  border-bottom: 1px solid #ffffff;
+  color:#000000;
+  opacity: 0.4;
+}
+#services-content .shadow-overlay2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background: linear-gradient(to top, black 20%, transparent 1000%);
+}
+/*******************section 2*******************/
+#services-body{
+  background-color: #ffffff;
+  height: 2300px;
+}
+#services-body-h1{
+  font-weight: bold;
+  font-family:  "metropolis-regular", sans-serif;
+  font-size:72px;
+  text-transform: uppercase;
+  opacity: 0.8;
+  color: #000000;
+}
+#services-body-p{
+  font-family: "Adobe Caslon Pro Bold",sans-serif;
+  font-size: 28px;
+  line-height: 3.5rem;
+  letter-spacing: 0.2rem;
+}
+#hotel-icon{
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  height:100px;
+}
+#main-services-body-hotels,.services-body-hotels{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.services-body-hotels-icon{
+  display: table;
+  width: 100%;
+  height:200px;
+  background-color: #ffffff;
+}
+.services-body-hotels-icon-1{
+  display: table-cell;
+  width: 20%;
+  height:auto;
+  margin: 2px;
+  vertical-align: middle;
+}
+.services-body-hotels-icon-2{
+  display: table-cell;
+  width: 20%;
+  height:auto;
+  margin: 2px;
+}
+.services-body-hotels-icon-3{
+  display: table-cell;
+  width: 20%;
+  height:auto;
+  vertical-align: middle;
+}
+.services-body-hotels-icon-4{
+  display: table-cell;
+  width: 20%;
+  height:auto;
+  margin: 2px;
+}
+.services-body-hotels-icon-5{
+  display: table-cell;
+  width: 20%;
+  height:auto;
+  vertical-align: middle;
+}
+.main-services-body-transport{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.services-body-transport-maintitle{
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+.services-body-transport-icon{
+  display: table;
+  width: 100%;
+  height:200px;
+  background-color: #ffffff;
+}
+.services-body-transport-icon-1{
+  display: table-cell;
+  width: 20%;
+  height:auto;
+  margin: 2px;
+  vertical-align: middle;
+}
+.services-body-transport-icon-2{
+  display: table-cell;
+  width: 20%;
+  height:auto;
+  margin: 2px;
+}
+.services-body-transport-icon-3{
+  display: table-cell;
+  width: 20%;
+  height:auto;
+  vertical-align: middle;
+}
+#icon_mod{
+  padding-top: 30px;
+  width:200px;
+  height:200px;
+}
+#icon_title-mod{
+  font-size:28px;
+  font-weight: bold;
+}
+.main-services-body-navigation{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.services-body-navigation-maintitle{
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+}
+.services-body-navigation-map{
+  width: 100%;
+  height:200px;
+  background-color: #ffffff;
+}
+.services-body-navigation-map1{
+  width: 100%;
+  height:auto;
+}
+#map1{
+  display:block;
+  width:100%;
+  height:600px;
+  background-size: cover;
+}
+#map1_image{
+  width:1000px;
+}
+/***********************transport_form*************************/
+.transport{
+  background-color: #ffffff;
+  background-image: url(../images/patterns/black-Linen.png);
+  opacity: 10;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 60%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 5px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+input[type=date]{
+  padding: 8px 10px;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=time]{
+  padding: 8px 10px;
+  display: inline-block;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=reset] {
+  width: 25%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin-left: 40px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=reset]:hover {
+  background-color: #45a049;
+}
+#main{
+  display: table;
+  width: 100%;
+  padding-top: 2.5%;
+  padding-left: 5%;
+}
+#transport_transition{
+  display: table-cell;
+  width: 60%;
+  height: auto;
+}
+#main-transport-form{
+  width: 50%;
+  height: auto;
+  display: table-cell;
+  vertical-align: top;
+}
+#transport-form{
+  width:80%;
+  height: 500px;
+  border-radius: 5px;
+  background-color: #dbd2d2;
+  padding: 20px;
+}
+#label_design{
+  font-size: 18px;
+  font-weight: bold;
+}
+#label_design1{
+  font-size: 15px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+#sub_div{
+  width: 100%;
+  display: table;
+  padding-top: 10px;
+}
+#sub_div_cell1{
+  width: 50%;
+  display: table-cell;
+  padding-left: 2%;
+}
+#sub_div_cell2{
+  width:50%;
+  display: table-cell;
+  padding-left: 15%;
+}
+#submit{
+  margin-top: 30px;
+}
+
+#for_transport_transition_slides {
+
+  width: 100%;
+  height: 500px;
+  position: relative;
+  border-radius: 5px;
+}
+#transport_transition{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.fading {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+@keyframes fade {
+  from {opacity: .1} 
+  to {opacity: 5}
+}
+/**************pop up windows for submite button************************/
+
+#alert-for-submition {
+    visibility: hidden;
+    width:25%;
+    height:75px;
+    min-width: 40%;
+    background-color: #333333;
+    color: #ffffff;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 72px;
+    top: 50%;
+    left: 30%;
+    border-radius: 10px;
+    position: fixed;
+    font-size: 17px;
+}
+
+#alert-for-submition.show {
+    visibility: visible;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+/***********************************contact**************************************/
+#contact-content{
+  width: 100%;
+  height:100%;
+  min-height:720px;
+  background-color: transparent;
+}
+#contact-content-menu{
+  width: 100%;
+  height:40%;
+  min-height:758px;
+  background-image:url(../images/contact-us.jpg);
+  position: relative;
+  background-size: cover;
+}
+#contact-content .shadow-overlay2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  background: linear-gradient(to top, black 20%, transparent 1000%);
+}
+#contact-body{
+  background-color: #f2efef;
+}
+#contact-body-table{
+  display: table;
+  width:100%;
+  height:600px; 
+}
+#left-div{
+  display: table-cell;
+  width: 65%;
+  padding-left:5%; 
+}
+#right-div{
+  display: table-cell;
+  width: 40%;
+  margin: 0;
+}
+#field-one{
+  width: 95%;
+  font-size: 20px;
+}
+#contact-field-select{
+  width: 25%;
+}
+#contact-field-select2{
+  width: 50%;
+}
+#for_check{
+  display: none;
+}
+#field-left{
+  width: 90%;
+  font-size: 20px;
+}
+#field-left-main-table{
+  display: table;
+  width: 100%;
+}
+#field-left-leftcell
+{
+  width: 65%;
+  display: table-cell;
+}
+#field-left-rightcell{
+  width: 35%;
+  display: table-cell;
+}

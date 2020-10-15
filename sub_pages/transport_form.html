@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="../css/main.css">
+	
+	
+</head>
+<body>
+	<div class="transport">
+		<div>
+			<img src="../images/icons/logo.png" id="main-logo-for-subpages">
+				<div id="content-list">
+						<ul class="main-menu">
+							<li class="main-menu-list">
+								<a href="../index.html">Home</a>
+							</li>
+
+							<li>
+								<a  href="places.html">Places</a>
+							</li>
+
+							<li>
+								<a class="active" href="services.html">Services</a>
+							</li>
+
+							<li>
+								<a href="contact.html">Contact</a>
+							</li>
+
+						</ul>
+				</div>
+
+			<div id="main">
+				<div id="transport_transition">
+					<div class="transport_transition_slides fading">
+						<img id="for_transport_transition_slides" src="../images/transport/slide1.jpg">
+					</div>
+					<div class="transport_transition_slides fading">
+						<img id="for_transport_transition_slides" src="../images/transport/slide2.jpg">
+					</div>
+					<div class="transport_transition_slides fading">
+						<img id="for_transport_transition_slides" src="../images/transport/slide3.png">
+					</div>
+					<div class="transport_transition_slides fading">
+						<img id="for_transport_transition_slides" src="../images/transport/slide4.jpg">
+					</div>
+					<div class="transport_transition_slides fading">
+						<img id="for_transport_transition_slides" src="../images/transport/slide5.jpg">
+					</div>
+					<div class="transport_transition_slides fading">
+						<img id="for_transport_transition_slides" src="../images/transport/slide6.jpg">
+					</div>
+				</div>
+				<div id="main-transport-form">	
+						<div id="transport-form">
+							<form id="for_auto_execute">
+								<label id="label_design">Your name</label>
+								<input type="text" id="name1" required>
+
+								<label id="label_design">Pick Location</label>
+								<select id="p_loc" name="pick_location" required>
+									<option style="display: none;" value=''></option>
+									<optgroup label="Hotels">
+										<option style="display: none;" value=''></option>
+										<option value="tangerine">Tangerine</option>
+										<option value="avani">Avani</option>
+										<option value="bluewater">The Blue Water</option>
+										<option value="benthota">Benthota</option>
+										<option value="seagate">Sea Gate</option>
+									</optgroup>
+									<optgroup label="places">
+										<option value="benthota">Benthota</option>
+										<option value="Kaluthara_Bodiya">Kaluthara Bodiya</option>
+										<option value="Richmond_Castle">Richmond Castle</option>
+										<option value="Fa_Hien_Cave">Fa Hien Cave</option>
+										<option value="Kande_Vihara">Kande Vihara</option>
+										<option value="Calido_Beach">Calido Beach</option>
+										<option value="Batamulla_Kandha_Temple">Batamulla Kandha</option>
+									</optgroup>
+								</select>
+								<label id="label_design">Drop Location</label>
+								<select id="d_loc" name="drop_location" required>
+									<option style="display: none;" value=''></option>
+									<optgroup label="places">
+										<option style="display: none;" value=''></option>
+										<option value="benthota">Benthota</option>
+										<option value="Kaluthara_Bodiya">Kaluthara Bodiya</option>
+										<option value="Richmond_Castle">Richmond Castle</option>
+										<option value="Fa_Hien_Cave">Fa Hien Cave</option>
+										<option value="Kande_Vihara">Kande Vihara</option>
+										<option value="Calido_Beach">Calido Beach</option>
+										<option value="Batamulla_Kandha_Temple">Batamulla Kandha</option>
+									</optgroup>
+									<optgroup label="Hotels">
+										<option value="tangerine">Tangerine</option>
+										<option value="avani">Avani</option>
+										<option value="bluewater">The Blue Water</option>
+										<option value="benthota">Benthota</option>
+										<option value="seagate">Sea Gate</option>
+									</optgroup>
+								</select>
+
+								<label id="label_design">Vehicle Type</label>
+								<select id="v_type" name="v_type" required>
+									<option style="display: none;" value=''></option>
+									<option value="Car">Car</option>
+									<option value="Van">Van</option>
+									<option value="Bus">Bus </option>
+								</select>
+								<div id="sub_div">
+									<div id="sub_div_cell1">
+										<label id="label_design1">Pick Up Date</label><br><br>
+										<input type="date" name="pick_date" id="name1" required>
+									</div>
+
+									<div id="sub_div_cell2">
+										<label id="label_design1">Pick Up Time</label><br><br>
+										<input type="time" name="pick_time" id="name1" required>
+									</div>
+								</div>
+								
+							</form>
+							<input type="submit" name="submit" id="submit" onclick="myFunction()">
+							<input type="reset" name="reset" id="reset" form="for_auto_execute">
+						</div>
+				</div>
+			</div>
+			<div id="alert-for-submition">Your order has been recorded....</div>
+		</div>
+		<br><br>
+	</div>
+		<div id="footer-main">
+				<table id="footer-table">
+					<tr>
+						<td id="first_tr" colspan="3" align="center">Copyright &copy; P A Group.</td>
+					</tr>
+					<tr>
+						<td id="details_cell">
+
+												HEAD OFFICE<br><br>
+												Galle Road,Kalutara South.<br>
+												Tel: +94 342 160098 <br>
+												E-mail: info@kalutarasrilanka.com<br>
+												Opening Hours:<br> 
+												Week Days :	6.30 a.m. to 7.00 p.m <br>
+												Saturday : 7.00 a.m. to 7.00 p.m <br>
+						</td>
+						<td id="details_cell">
+												KOLLUPITIYA BRANCH<br><br>
+												Galle Road,Kollupitiya.<br>
+												Tel: +94 112 160098 <br>
+												E-mail: info@kalutarasrilanka.com<br>
+												Opening Hours:<br> 
+												Week Days :	6.30 a.m. to 7.00 p.m <br>
+												Saturday : 7.00 a.m. to 7.00 p.m <br>
+						</td>
+						<td id="details_cell">
+												KANDY BRANCH<br><br>
+												194, Main Street,Kandy.<br>
+												Tel: +94 712 160098 <br>
+												E-mail: info@kalutarasrilanka.com<br>
+												Opening Hours:<br> 
+												Week Days :	6.30 a.m. to 7.00 p.m <br>
+												Saturday : 7.00 a.m. to 7.00 p.m <br>
+						</td>
+					</tr>
+				</table>
+		</div>
+	<script src = "../js/java_parts.js"></script>
+	
+</body>
+</html> 
